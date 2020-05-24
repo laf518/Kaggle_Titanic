@@ -1,13 +1,14 @@
 # Kaggle_Titanic
+
 ## Kaggle Titanic Tutorial
 
-## Source:  https://www.kaggle.com/c/titanic/overview
+### Source:  https://www.kaggle.com/c/titanic/overview
 
-## Objective: "Use machine learning to create a model that predicts which passengers survived the Titanic shipwreck." -> Maximize Accuracy
+### Objective: "Use machine learning to create a model that predicts which passengers survived the Titanic shipwreck." -> Maximize Accuracy
 
-## Data Sets: 'train.csv'; 'test.csv'
+### Data Sets: 'train.csv'; 'test.csv'
 
-## Data Notes:
+### Data Notes:
 
 Variable | Definition | Key
 -------- | ---------- | ---
@@ -27,7 +28,7 @@ embarked | Port of Embarkation | C = Cherbourg, Q = Queenstown, S = Southampton
        * 2nd = Middle
        * 3rd = Lower
 
-     age: Age is fractional if less than 1. If the age is estimated, is it in the form of xx.5
+     * age: Age is fractional if less than 1. If the age is estimated, is it in the form of xx.5
 
      * sibsp: The dataset defines family relations in this way...
        * Sibling = brother, sister, stepbrother, stepsister
@@ -38,8 +39,8 @@ embarked | Port of Embarkation | C = Cherbourg, Q = Queenstown, S = Southampton
        * Child = daughter, son, stepdaughter, stepson
        * Some children travelled only with a nanny, therefore parch=0 for them.
      
-## Engineered Data:
+### Engineered Data:
 *Use this section to define new features that were created from the original data set.*
 
-## Procedural Notes:
+### Procedural Notes:
 *Use this section to annotate the steps taken to create our model.*
