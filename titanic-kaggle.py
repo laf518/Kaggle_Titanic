@@ -14,14 +14,15 @@ data["Name"] = temp1[0] + " " + temp2[1];
 
 #Replace missing values with mean
 data = data.fillna(data.mean());
+data = data.fillna(data.mode());
 
 # One hot encoding for categorical features into numeric
 categorical_feature_mask = data.dtypes==object;
 categorical_cols = data.columns[categorical_feature_mask].tolist();
 labee = LabelEncoder();
-data[categorical_cols] = data[categorical_cols].apply(lambda col: labee.fit_transform(col));
-
-print(categorical_cols);
+data[categorical_cols] = labee.fit_transform(data[categorical_cols]);
+#Columns Cabin & Embarked giving an error : ValueError: bad input shape on line 23
+print(data);
 """
 #Separating features & target
 temp_data = data.copy();
